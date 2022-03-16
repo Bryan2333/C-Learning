@@ -1,4 +1,4 @@
-// 判断一个分数是否及格
+/* 判断一个分数是否及格 */
 #include <stdio.h>
 
 int main(void){
