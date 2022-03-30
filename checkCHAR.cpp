@@ -1,4 +1,4 @@
-//不完整
+//判断字符 
 #include <stdio.h>
 
 int main(void){
