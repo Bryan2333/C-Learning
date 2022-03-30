@@ -3,6 +3,7 @@
 
 int main(void){
 	double x1, y1, x2, y2, x3, y3;
+/*	printf("请输入三点坐标： ");*/
 	scanf("%lf%lf%lf%lf%lf%lf", &x1, &y1, &x2, &y2, &x3, &y3);
 	double side1 = sqrt(pow((x1 - x2),2) + pow((y1 - y2),2)); /*用pow函数简化表达*/
 	double side2 = sqrt(pow((x1 - x3),2) + pow((y1 - y3),2));
