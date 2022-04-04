@@ -8,23 +8,23 @@ int main(void){
 	switch(operatorA){
 		case '+' :
 			result = num1 + num2;
-			printf("%d", result);
+			printf("%d\n", result);
 			break;
 		case '-' :
 			result = num1 - num2;
-			printf("%d", result);
+			printf("%d\n", result);
 			break;
 		case '*' :
 			result = num1 * num2;
-			printf("%d", result);
+			printf("%d\n", result);
 			break;
 		case '/' :
 			result = num1 / num2;
-			printf("%d", result);
+			printf("%d\n", result);
 			break;
 		case '%' : 
 			result = num1 % num2;
-			printf("%d", result);
+			printf("%d\n", result);
 			break;
 		default : 
 			printf("ERROR\n");
