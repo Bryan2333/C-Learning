@@ -12,6 +12,6 @@ int main(void){
         down = up; //分母是前一项的分子
         up = temp + up; //分子是前一项分子与分母的和
     }
-    printf("%.2lf", sum);
+    printf("%.2lf\n", sum);
     return 0;
 }
