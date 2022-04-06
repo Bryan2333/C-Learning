@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(void){
-    int digit, num;
+    int digit = 0, num;
     printf("num = ");
     scanf("%d", &num);
     if(num < 0)
