@@ -1,19 +1,23 @@
-//任务3
+//任务5
+
 #include <stdio.h>
 
 int main(void){
-    int j = 0, grade;
-    scanf("%d", &grade);
-    while(grade != -1)
+    int j, grade;
+    for(j = 1; grade != -1; j++)
     {
+        scanf("%d", &grade);
+        if(grade == -1)
+        {
+            break;
+        }
         printf("%d ", grade);
-        j++;
         if(j == 3)
         {
             printf("\n");
             j = 0;
         }
-        scanf("%d", &grade);
     }
+    printf("\n");
     return 0;
 }
