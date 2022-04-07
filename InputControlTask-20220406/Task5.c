@@ -1,4 +1,4 @@
-//хннЯ5
+//Д╩╩Е┼║5
 #include <stdio.h>
 
 int main(void){
