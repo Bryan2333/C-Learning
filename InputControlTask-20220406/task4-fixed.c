@@ -1,22 +1,30 @@
-//念数字 仍然有bug
+//念数字 最终修复版
 
 #include <stdio.h>
 #include <math.h>
-
 int main(void){
-	int num, digit, dividee;
+	int num, digit, dividee,e=0;
 	scanf("%d", &num);
-	int temp = num;
-	if(temp < 0){ //如果是负数则输出fu,并将其变成正数
+	const int temp = num;
+		if(temp < 0){ 
 		printf("fu ");
-		num = -num;
+		num = -num; //将负数变为正数
 	}
 	for(int i = 100; i >= 0; i--)
 	{
 		dividee = pow(10,i);
 		digit = num / dividee;
-		if(digit == 0 && i != 0 ){ 
+		if(digit == 0 && i!=0 ){
 			continue;
+		}
+		digit = digit - e;
+		num = num % dividee;
+		int a = pow((10),(i-1));
+		if(num < a){ //如果三位数余数小于10，则加10
+			num = num + a;
+			e = 1;
+		}else {
+			e = 0;
 		}
 		if(i != 0){
 			switch(digit){
@@ -52,7 +60,7 @@ int main(void){
 				break;
 			}
 		}
-		if(i == 0){ //最后一位数不加空格
+		if(i == 0){
 			switch(digit){
 			case 0 :
 				printf("ling");
@@ -86,7 +94,6 @@ int main(void){
 				break;
 			}
 		}
-		num = num % dividee;
 	}
 	return 0;
 }
