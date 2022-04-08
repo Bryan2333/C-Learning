@@ -1,4 +1,4 @@
-//任务4
+//念数字
 
 #include <stdio.h>
 #include <math.h>
@@ -6,8 +6,8 @@
 int main(void){
 	int num, digit, dividee;
 	scanf("%d", &num);
-	const int temp = num;
-	if(temp < 0){
+	int temp = num;
+	if(temp < 0){ //如果是负数则输出fu,并将其变成正数
 		printf("fu ");
 		num = -num;
 	}
@@ -15,7 +15,7 @@ int main(void){
 	{
 		dividee = pow(10,i);
 		digit = num / dividee;
-		if(digit == 0 && i != 0){
+		if(digit == 0 && i != 0 ){ 
 			continue;
 		}
 		if(i != 0){
@@ -52,7 +52,7 @@ int main(void){
 				break;
 			}
 		}
-		if(i == 0){
+		if(i == 0){ //最后一位数不加空格
 			switch(digit){
 			case 0 :
 				printf("ling");

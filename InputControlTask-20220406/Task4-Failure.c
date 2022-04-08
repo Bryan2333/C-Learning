@@ -5,7 +5,7 @@
 int main(void){
     int num, digit, j = 0;
     scanf("%d", &num);
-    int temp = num;
+    const int temp = num;
     do{ //统计该数字的位数
         digit = num % 10;
         j++;
