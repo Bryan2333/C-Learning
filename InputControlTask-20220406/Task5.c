@@ -10,14 +10,14 @@ int main(void){
 		if(test < 0){
 			break;
 		}
-		if(test > guess){
+		if(test > guess){ 
 			printf("Too big\n");
 		}
 		else if(test < guess){
 			printf("Too small\n");
 		}
 		else if(test == guess){
-			if(i == 1){
+			if(i == 1){ //一次猜对
 				printf("Bingo!\n");
 				ifright = 1;
 			}
@@ -32,7 +32,7 @@ int main(void){
 			break;
 		}
 	}
-	if(ifright == 0){
+	if(ifright == 0){ //没有在规定次数内猜对
 		printf("Game Over\n");
 	}
 	return 0;

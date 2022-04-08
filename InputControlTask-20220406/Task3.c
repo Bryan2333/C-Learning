@@ -1,4 +1,4 @@
-//求给定精度的简单交错序列部分和
+//求整数的位数及各位数字之和
 #include <stdio.h>
 
 int main(void){
