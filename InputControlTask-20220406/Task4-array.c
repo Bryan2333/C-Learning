@@ -1,10 +1,14 @@
-//念数字 不要用该段代码
+//念数字 用数组来实现
 
 #include <stdio.h>
 
 int main(void){
     int num, digit, j = 0;
     scanf("%d", &num);
+    if(num < 0){
+        num = -num;
+        printf("fu ");
+    }
     const int temp = num;
     do{ //统计该数字的位数
         digit = num % 10;
