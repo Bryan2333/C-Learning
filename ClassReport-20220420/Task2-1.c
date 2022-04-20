@@ -5,7 +5,7 @@ int main(void){
     for(days = 9; days >= 1; days--)
     {
         pearNum = (pearNum + 1) * 2;
-        printf("%d\n", pearNum);
+//        printf("%d\n", pearNum);
     }
     printf("%d\n", pearNum);
     return 0;
