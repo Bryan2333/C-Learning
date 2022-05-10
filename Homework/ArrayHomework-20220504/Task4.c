@@ -1,21 +1,37 @@
+//求整数序列中出现次数最多的数
 #include <stdio.h>
-
-int main(void){
-    int num, max = 0;
-    int a[1000];
-    scanf("%d", &num);
-    for(int i = 0; i < num; i++)
-    {
-        scanf("%d", &num);
-        a[num] ++;
-    }
-    for(int i = 0; i < 1000; i++)
-    {
-        if(a[max] < a[i])
-        {
-            max = i;
-        }
-    }
-    printf("%d %d\n", a[max], max);
-    return 0;
+ 
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int temp[n];
+	for(int i = 0;i < n; i++)
+	{
+		scanf("%d",&temp[i]);
+	}
+	int a[n];//记录次数的数组 
+	for(int i = 0; i < n; i++)
+	{
+		int count = 0;
+		for(int j = 0; j < n ;j++)
+		{
+			if(temp[i] == temp[j]){
+				count++;
+				a[i]=count;
+			}
+		}
+	}
+	int ret;
+	int max;
+	for(int i = 0;i < n;i++){
+		max = a[0];
+		if(a[i] >= max){ 
+			max = a[i];
+			ret = i;
+		} 
+	}
+	printf("%d %d",temp[ret],a[ret]);
+	
+	return 0;
 }
