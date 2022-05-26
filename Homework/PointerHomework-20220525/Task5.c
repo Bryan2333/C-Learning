@@ -21,3 +21,20 @@ int main()
 }
 
 /* 你的代码将被嵌在这里 */
+int getindex( char *s )
+{
+    int weekDay;
+    char *days[7] = {
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+        "Saturday"};
+    for(weekDay = 0; weekDay <= 6; weekDay++)
+    {
+        if(strcmp(s, days[weekDay]) == 0) //调用strcmp来对比字符串 
+        {
+            break;
+        }
+    }
+    if(weekDay == 7)
+        weekDay = -1;
+    return weekDay;
+}

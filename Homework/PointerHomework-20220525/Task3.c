@@ -21,12 +21,7 @@ int main()
 void splitfloat( float x, int *intpart, float *fracpart )
 {
     //计算实数的整数部分
-    float floatPart = 0;
-    while(floatPart > 1)
-    {
-        floatPart = x / (10 * 1.0);
-    }
-    *fracpart = floatPart;
-    *intpart = x - floatPart;
+    *intpart = (int)x; //将x从浮点数强制转为整数，舍去小数部分
+    *fracpart = x - *intpart; //减去整数部分
     // printf("%f\n", floatPart);
 }
