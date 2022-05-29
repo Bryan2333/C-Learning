@@ -4,7 +4,7 @@
 int main(void){
     int grade, n, A = 0, B = 0, C = 0, D = 0, E = 0;
     scanf("%d", &n);
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; ++i)
     {
         scanf("%d", &grade);
         if(grade >= 90)

@@ -13,14 +13,14 @@ int main(void){
         hour = hour - 12; //12小时制
         if(minute == 0) //若为整点
         {
-            for(int i = 0; i < hour; i++ )
+            for(int i = 0; i < hour; ++i )
             {
                 printf("Dang");
             }
         }
         else if(minute != 0) //若不是整点
         {
-            for(int i = 0; i < hour + 1; i++)
+            for(int i = 0; i < hour + 1; ++i)
             {
                 printf("Dang");
             }

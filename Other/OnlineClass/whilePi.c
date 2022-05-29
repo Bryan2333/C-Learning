@@ -12,7 +12,7 @@ int main(void){
         pi = pi + flag * 1 / down;
         down = down + 2;
         flag = -flag;
-        i++;
+        ++i;
     }
     pi = pi  * 4;
     printf("Pi = %lf\ni = %d\n", pi, i);

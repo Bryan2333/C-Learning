@@ -7,7 +7,7 @@ int main(void){
     do
     {   
         printf("%d ", grade);
-        j++;
+        ++j;
         if(j == 3)
         {
             printf("\n");

@@ -9,7 +9,7 @@ int main(void)
     scanf("%d", &M);
     printf("Please enter the number N: ");
     scanf("%d", &N);
-    for(int i = M; i <= N; i++)
+    for(int i = M; i <= N; ++i)
     {
         printf("%d ", i);
     }

@@ -11,7 +11,7 @@ int main()
     int a[MAXN];
 
     scanf("%d", &n);
-    for( i = 0; i < n; i++ )
+    for( i = 0; i < n; ++i )
         scanf("%d", &a[i]);
     scanf("%d", &x);
     index = search( a, n, x );
@@ -27,7 +27,7 @@ int main()
 int search( int list[], int n, int x )
 {
     int targetIndex;
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; ++i)
     {
         if(x == list[i])
         {

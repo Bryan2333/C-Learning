@@ -18,7 +18,7 @@ int main(void)
     	if(score< 60){					/* 统计不及格成绩的学生人数 */
     	    count++;
     	}
-		i++;
+		++i;
 	}while(score >= 0 && i <= n);
     if(n != 0)
 	{

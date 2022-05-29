@@ -5,7 +5,7 @@ int main(void){
     int n;
     scanf("%d", &n);
     double temp, sum = 0, down = 1, up = 2;
-    for(double i = 1; i <= n; i++)
+    for(double i = 1; i <= n; ++i)
     {
         sum = sum + up / down;
         temp = down;

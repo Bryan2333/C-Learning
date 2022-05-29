@@ -4,7 +4,7 @@
 
 int main(void){
     int j, grade;
-    for(j = 1; grade != -1; j++)
+    for(j = 1; grade != -1; ++j)
     {
         scanf("%d", &grade);
         if(grade == -1)

@@ -11,7 +11,7 @@ int main()
     int a[MAXN];
     
     scanf("%d", &n);
-    for( i=0; i<n; i++ ){
+    for( i=0; i<n; ++i ){
         scanf("%d", &a[i]);
     }
 
@@ -24,7 +24,7 @@ int main()
 int FindArrayMax( int a[], int n )
 {
     int max = 0;
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; ++i)
     {
         if(a[i] > max)
         {

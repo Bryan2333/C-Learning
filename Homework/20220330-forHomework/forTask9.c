@@ -7,7 +7,7 @@ int main(void){
     scanf("%d %d", &num1, &num2);
     if(100 <= num1 && num1 <= num2 && num2 <= 999 )
     {
-        for(int i = num1; i <= num2; i++)
+        for(int i = num1; i <= num2; ++i)
         {
             hundreds = i / 100;
             tens = i / 10 % 10;

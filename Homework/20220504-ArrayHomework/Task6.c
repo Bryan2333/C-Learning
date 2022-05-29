@@ -7,13 +7,13 @@ int main(void){
     double sumSqrt = 0, Avg, sum = 0;
     scanf("%d", &n);
     int a[n];
-    for(int i = 0; i < n; i++) //计算总和以及平均值
+    for(int i = 0; i < n; ++i) //计算总和以及平均值
     {
         scanf("%d", &a[i]);
         sum +=a[i];
         Avg = sum / n * 1.0;
     }
-    for(int i = 0; i < n; i++) //计算方差
+    for(int i = 0; i < n; ++i) //计算方差
     {
         sumSqrt += pow((a[i] - Avg),2);
     }

@@ -5,11 +5,11 @@ int main(void)
 	int i, j, n;
 	int arr[100];
 	scanf("%d", &n);
-	for (i = 0;i < n;i++)
+	for (i = 0;i < n;++i)
 	{
 		scanf("%d", &arr[i]);
 	}
-	for (i = 1;i < n;i++)
+	for (i = 1;i < n;++i)
 	{
 		if (i == 4 || i == 1||i==7)
 		{

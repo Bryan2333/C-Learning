@@ -12,12 +12,12 @@ int main(void){
     const int temp = num;
     do{ //统计该数字的位数
         digit = num % 10;
-        j++;
+        ++j;
         num = num / 10;
     }while(num > 0);
     int numleng[j];
     num = temp;
-    for(int i = 0; i < j; i++) //将该数字的各个位数存入数组中
+    for(int i = 0; i < j; ++i) //将该数字的各个位数存入数组中
     {
         digit = num % 10;
         numleng[i] = digit;

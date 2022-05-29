@@ -8,13 +8,13 @@ int main(void){
     char str;
     char test[MAXM];
     scanf("%c", &str);
-    for(int i = 0; str != '\n'; i++)
+    for(int i = 0; str != '\n'; ++i)
     {
         test[i] = str;
         cnt++;
         scanf("%c", &str);
     }
-    for(int i = 1; i <= cnt; i++)
+    for(int i = 1; i <= cnt; ++i)
     {
         printf("%c", test[cnt - i]);
     }

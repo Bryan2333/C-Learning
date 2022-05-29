@@ -24,9 +24,9 @@ void str_read(char str[], int n)
     //     {
     //         break;
     //     }
-    //     i++;
+    //     ++i;
     // }
-    for(i = 0; i < n; i++)
+    for(i = 0; i < n; ++i)
     {
         scanf("%c", &str[i]);
         if(str[i] == '\n')

@@ -5,7 +5,7 @@ int main(void){
     int grade, n, count = 0, sum = 0;
     double average;
     scanf("%d", &n);
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; ++i)
     {
         scanf("%d", &grade);
         sum = sum + grade;

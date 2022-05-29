@@ -4,7 +4,7 @@
 int main(void){
     float x,f;
     int i;
-    for (i=0; i<3; i++){
+    for (i=0; i<3; ++i){
         scanf("%f", &x);
         if(x<0){
             f = fabs(x + 1);

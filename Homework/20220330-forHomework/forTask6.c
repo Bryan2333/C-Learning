@@ -5,7 +5,7 @@ int main(void){
     int down, n, sign = 1;
     double sum = 0;
     scanf("%d", &n);
-    for(double i = 1; i <= n; i++)
+    for(double i = 1; i <= n; ++i)
     {
         down =  2 * i - 1;
         sum = sum + sign * (i / down);

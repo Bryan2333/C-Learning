@@ -3,10 +3,10 @@
 
 int main(void){
     int y = 0;
-    for(int i = 10; i < 100; i++)
+    for(int i = 10; i < 100; ++i)
     {   
         int isPrime = 1; //默认是素数
-        for(int j = 2; j < i; j++)
+        for(int j = 2; j < i; ++j)
         {
             if(i % j == 0)
             {

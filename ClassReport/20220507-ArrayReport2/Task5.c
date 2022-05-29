@@ -15,7 +15,7 @@ int day_of_year(int year, int month, int day)
         {0,31,29,31,30,31,30,31,31,30,31,30,31} 
     };
     leap = (year % 4 == 0 && year % 100 != 0 || year % 400 == 0); 
-    for(i = 1; i < month ; i++){
+    for(i = 1; i < month ; ++i){
         day += tab[leap][i];
     } 
     

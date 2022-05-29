@@ -3,7 +3,7 @@
 int main(void){
 	int score;
 	double sum = 0;
-	for(int i = 0; i < 3;i++)
+	for(int i = 0; i < 3;++i)
 	{
 		scanf("%d", &score);
 		sum = sum + score;

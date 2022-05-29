@@ -4,10 +4,10 @@ int main(void){
     int num1, num2, isPrime = 1, primeSum = 0, primeNum = 0;
     //默认是素数 
     scanf("%d %d", &num1, &num2);
-    for(int i = num1; i < num2; i++)
+    for(int i = num1; i < num2; ++i)
     {   
         isPrime = 1;
-        for(int j = 2; j < i; j++)
+        for(int j = 2; j < i; ++j)
         {
             if( i % j == 0)
             {

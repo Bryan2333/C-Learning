@@ -15,7 +15,7 @@ int main()
     char *string[MAXN] = {NULL};
     
     scanf("%d", &n);
-    for(i = 0; i < n; i++) {
+    for(i = 0; i < n; ++i) {
         string[i] = (char *)malloc(sizeof(char)*MAXS);
         scanf("%s", string[i]);
     }
@@ -29,7 +29,7 @@ int max_len( char *s[], int n )
 {
 	int max=0;//假设max为s[0] 
 	
-	for(int i=0;i<n;i++)
+	for(int i=0;i<n;++i)
     {
 		if(strlen(s[max]) < strlen(s[i]))
         {

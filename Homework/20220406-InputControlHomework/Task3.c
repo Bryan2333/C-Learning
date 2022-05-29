@@ -7,7 +7,7 @@ int main(void){
     do{
         digit = eps % 10;
         sum = sum + digit;
-        i++;
+        ++i;
         eps = eps / 10;
     }while(eps > 0);
     printf("%d %d\n", i, sum);

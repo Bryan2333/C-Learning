@@ -9,7 +9,7 @@ int main(void)
     const int arrayC[] = {3, 6, 10};  
     //b = 6; 会编译报错
     printf("a = %d, b = %d\n", a, b);
-    for(int i = 0; i < 3; i++)
+    for(int i = 0; i < 3; ++i)
     {
         printf("%d ", arrayC[i]);
         if(i == 2)

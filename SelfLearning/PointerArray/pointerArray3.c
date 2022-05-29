@@ -14,7 +14,7 @@ int main(void)
 int maxv(int *v, int N)
 {
     int max = *v;
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < N; ++i)
     {
         if(*(v+i) > max)
         {

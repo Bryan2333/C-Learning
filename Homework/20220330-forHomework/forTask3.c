@@ -3,7 +3,7 @@
 int main(void){
     int letter = 0, digit = 0, blank = 0, other = 0;
     char test;
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 10; ++i)
     {
         scanf("%c", &test);
         if((test >= 'A' && test <= 'Z') || (test >= 'a' && test <= 'z'))

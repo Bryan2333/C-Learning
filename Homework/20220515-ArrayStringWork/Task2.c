@@ -6,7 +6,7 @@ int main(void){
     char test[MAXM];
     char str;
     scanf("%d", &str);
-    for(int i = 0; str != '\0'; i++)
+    for(int i = 0; str != '\0'; ++i)
     {
         test[i] = str;
         if(str == ' ')

@@ -4,7 +4,7 @@
 int main(void){
 	int guess, guesstimes, test, ifright = 0;
 	scanf("%d %d", &guess, &guesstimes);
-	for(int i = 1; i <= guesstimes; i++)
+	for(int i = 1; i <= guesstimes; ++i)
 	{
 		scanf("%d", &test);
 		if(test < 0){
