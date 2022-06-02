@@ -1,4 +1,3 @@
-//Fuck PTA
 #include <stdio.h>
 
 int main(void){
@@ -12,17 +11,16 @@ int main(void){
     for(int i = 1; i < n; ++i)
     {
         abstract = a[i] - a[i-1];
-        if(j < 2){
+        if(j < 2 && i < n-1){
             printf("%d ", abstract);
-        }else if(j == 2){
+        }else if(j == 2 || i == n-1){
             printf("%d", abstract);
         }
         ++j;
-        if(j % 3 == 0){
+        if(j == 3){
             printf("\n"); 
             j = 0;
         }
     }
-    printf("\n");
     return 0;
 }
