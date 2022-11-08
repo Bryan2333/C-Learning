@@ -27,7 +27,7 @@ void bubblesort(int array[], int length)
     int temp;
     for(int i = 0; i < length-1; ++i)
     {
-        for(int j = 0; j < length-1; ++j)
+        for(int j = 0; j < length-1-i; ++j)
         {
             if(array[j] > array[j+1])
             {
