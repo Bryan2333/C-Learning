@@ -34,13 +34,13 @@ int main(void)
         }
     }
 
-    printf("以下为完全平方数\n");
+    // printf("以下为完全平方数\n");
     tempPing = firstPing;
-    while (tempPing != NULL && tempPing->Data != 0)
-    {
-        printf("%lf\n", tempPing->Data);
-        tempPing = tempPing->next;
-    }
+    // while (tempPing != NULL && tempPing->Data != 0)
+    // {
+    //     printf("%lf\n", tempPing->Data);
+    //     tempPing = tempPing->next;
+    // }
 
     li *firstLi = (li*)(malloc(sizeof(li)));
     li *tempLi = firstLi;
@@ -58,12 +58,34 @@ int main(void)
         }
     }
 
-    printf("\n以下为完全立方数\n");
+    // printf("\n以下为完全立方数\n");
     tempLi = firstLi;
-    while (tempLi != NULL && tempLi->Data != 0)
+    // while (tempLi != NULL && tempLi->Data != 0)
+    // {
+    //     printf("%lf\n", tempLi->Data);
+    //     tempLi = tempLi->next;
+    // }
+
+    double same[100];
+    int k = 0;
+    while (tempPing != NULL && tempPing->Data != 0)
     {
-        printf("%lf\n", tempLi->Data);
-        tempLi = tempLi->next;
+        while (tempLi != NULL && tempLi->Data != 0)
+        {
+            if (tempPing->Data == tempLi->Data)
+            {
+                same[k] = tempPing->Data;
+                k++;
+            }
+            tempLi = tempLi->next;
+        }
+        tempLi = firstLi;
+        tempPing = tempPing->next;
+    }
+
+    for (int i = 0; i < k; i++)
+    {
+        printf("%0.lf\n", same[i]);
     }
     
     return 0;
