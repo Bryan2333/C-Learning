@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int main(void)
 { 
-    double liNum[1000] = {0};
-    double pingNum[1000] = {0};
+    double *liNum = (double *)(malloc(sizeof(double) * 1000));
+    double *pingNum = (double *)(malloc(sizeof(double) * 1000));
 
     int j = 0;
     double sq;
@@ -62,6 +63,9 @@ int main(void)
         printf("%.0lf\n", same[i]);
     }
     printf("%d\n", k);
+
+    free(liNum);
+    free(pingNum);
 
     return 0;
 }

@@ -8,21 +8,21 @@ int main(void)
     {
         for (int j = 0; j < 3; j++)
         {
-            printf("&[%d][%d] = %lu\n", i, j, &array[i][j]);
+            printf("&[%d][%d] = %p\n", i, j, &array[i][j]);
         }
     }
 
     printf("\n");
 
-    printf("array = %lu\n", array);
-    printf("&array[0][0] = %lu\n", &array[0][0]);
+    printf("array = %p\n", array);
+    printf("&array[0][0] = %p\n", &array[0][0]);
 
-    printf("array + 1 = %lu\n", array + 1);
-    printf("&array[1][0] = %lu\n", &array[1][0]);
+    printf("array + 1 = %p\n", array + 1);
+    printf("&array[1][0] = %p\n", &array[1][0]);
 
-    printf("*(array + 1) = %lu\n", *(array + 1));
+    printf("*(array + 1) = %p\n", *(array + 1));
 
-    printf("*(*(array + 1)) = %lu\n", *(*(array + 1)));
+    printf("*(*(array + 1)) = %p\n", *(*(array + 1)));
 
     return 0;
 }
